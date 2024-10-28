@@ -11,6 +11,12 @@ public abstract class Transaction {
         setAmount(amount);
     }
 
+    public Transaction(Transaction Object){
+        setDate(Object.getDate());
+        setAmount(Object.getAmount());
+        setDescription(Object.getDescription());
+    }
+
     public String getDate() {
         return date;
     }

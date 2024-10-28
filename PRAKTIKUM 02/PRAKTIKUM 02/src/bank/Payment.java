@@ -2,9 +2,8 @@ package bank;
 
 public class Payment extends Transaction{
     private double  incomingInterest;
-    private final double outgoingInterest;
+    private double outgoingInterest;
 
-    //constructor
     public Payment(String date, String description, double amount, double incomingInterest, double outgoingInterest) {
         super(date, description, amount);
 
@@ -31,7 +30,7 @@ public class Payment extends Transaction{
     public void setOutgoingInterest(double outgoingInterest){
         if(outgoingInterest > 0 && outgoingInterest <1)
         {
-            this.incomingInterest = incomingInterest;
+            this.outgoingInterest = outgoingInterest;
         }
         else{
             throw new IllegalArgumentException("Outgoing interest must be between 0 and 1");

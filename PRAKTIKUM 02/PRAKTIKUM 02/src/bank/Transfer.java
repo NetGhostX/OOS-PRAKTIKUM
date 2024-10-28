@@ -10,17 +10,13 @@ public class Transfer extends Transaction {
         setRecipient(recipient);
     }
 
+    public Transfer(Transfer Object){
+        super(Object.getDate(),Object.getDescription(),Object.getAmount());
+        setSender(Object.getSender());
+        setRecipient(Object.getRecipient());
+    }
     public String getRecipient() {
         return recipient;
-    }
-
-    @Override
-    public void setAmount(double amount)
-    {
-        if(amount > 0){
-            this.amount = amount;
-        }
-        throw new IllegalArgumentException("Number must be positive");
     }
 
     public void setRecipient(String recipient) {
