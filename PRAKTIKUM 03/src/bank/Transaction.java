@@ -5,6 +5,8 @@ public abstract class Transaction {
     private String description;
     private double amount;
 
+
+
     // Konstruktor
     public Transaction(String date, String description, double amount) {
         this.date = date;
