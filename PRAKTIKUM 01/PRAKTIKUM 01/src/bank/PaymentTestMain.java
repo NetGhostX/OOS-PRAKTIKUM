@@ -54,8 +54,7 @@ public class PaymentTestMain {
         try {
             payment.setIncomingInterest(1.5);
             assert false : "Expected IllegalArgumentException";
-        } catch (IllegalArgumentException e) {
-            assert true;
+        } catch (IllegalArgumentException e) {assert true;
         }
     }
 
@@ -81,3 +80,4 @@ public class PaymentTestMain {
         // This test would need to capture the output stream to verify the printed content
     }
 }
+                    
