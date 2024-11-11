@@ -5,39 +5,29 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-/**
- * The PrivateBank class implements the Bank interface and provides concrete methods
- * to manage accounts and transactions.
- */
-public class PrivateBank implements Bank {
+
+public class PrivateBankAlt implements Bank {
     private String name;
     private double incomingInterest;
     private double outgoingInterest;
     private HashMap<String, List<Transaction>> accountsToTransactions = new HashMap<>();
 
-    /**
-     * Constructs a new PrivateBank with the specified name and interest rates.
-     *
-     * @param name             the name of the bank
-     * @param incomingInterest the interest rate for incoming transactions (deposits)
-     * @param outgoingInterest the interest rate for outgoing transactions (withdrawals)
-     * @throws IllegalArgumentException if the interest rates are not between 0 and 1
-     */
-    public PrivateBank(String name, double incomingInterest, double outgoingInterest) {
+    public PrivateBankAlt(String name, double incomingInterest, double outgoingInterest) {
         setName(name);
         setIncomingInterest(incomingInterest);
         setOutgoingInterest(outgoingInterest);
     }
 
     //TODO: copy constructor
-    public PrivateBank(PrivateBank otherBank) {
+    public PrivateBankAlt(PrivateBankAlt otherBank) {
         this.name = otherBank.name;
         this.incomingInterest = otherBank.incomingInterest;
         this.outgoingInterest = otherBank.outgoingInterest;
         // Note: We do not copy the accountsToTransactions map
     }
 
-    // Getter and Setter for name
+    //TODO: creating getter and setter for class attributes
+
     public String getName() {
         return name;
     }
@@ -46,29 +36,25 @@ public class PrivateBank implements Bank {
         this.name = name;
     }
 
-    // Getter and Setter for incomingInterest
     public double getIncomingInterest() {
         return incomingInterest;
     }
 
     public void setIncomingInterest(double incomingInterest) {
-        if (incomingInterest >= 0 && incomingInterest <= 1) {
+        if (incomingInterest >= 0.0 && incomingInterest <= 1.0) {
             this.incomingInterest = incomingInterest;
         } else {
-            throw new InvalidInterestArgument("Incoming interest must be between 0 and 1");
+            throw new IllegalArgumentException("Incoming interest must be between 0 and 1");
         }
     }
-
-    // Getter and Setter for outgoingInterest
     public double getOutgoingInterest() {
         return outgoingInterest;
     }
 
     public void setOutgoingInterest(double outgoingInterest) {
+
         if (outgoingInterest >= 0 && outgoingInterest <= 1) {
             this.outgoingInterest = outgoingInterest;
-        } else {
-            throw new InvalidInterestArgument("Outgoing interest must be between 0 and 1");
         }
     }
 
@@ -197,7 +183,24 @@ public class PrivateBank implements Bank {
 
         double balance = 0.0;
         for (Transaction transaction : accountsToTransactions.get(account)) {
-            balance += transaction.calculate();
+            double amount = transaction.getAmount();
+
+            if (transaction instanceof Transfer transfer) {
+                if (transfer.getSender().equals(account)) {
+                    // Outgoing transfer: subtract amount
+                    amount = -Math.abs(amount);
+                } else if (transfer.getRecipient().equals(account)) {
+                    // Incoming transfer: add amount
+                    amount = Math.abs(amount);
+                } else {
+                    // Transfer does not involve the account
+                    amount = 0.0;
+                }
+            } else if (transaction instanceof Payment) {
+                // For Payment, use calculate() method
+                amount = transaction.calculate();
+            }
+            balance += amount;
         }
         return balance;
     }
@@ -243,7 +246,7 @@ public class PrivateBank implements Bank {
     //TODO: equals und toString
     @Override
     public String toString() {
-        return "PrivateBank{" +
+        return "PrivateBankAlt{" +
                 "name='" + name + '\'' +
                 ", incomingInterest=" + incomingInterest +
                 ", outgoingInterest=" + outgoingInterest +
@@ -255,8 +258,8 @@ public class PrivateBank implements Bank {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof PrivateBank)) return false;
-        PrivateBank that = (PrivateBank) o;
+        if (!(o instanceof PrivateBankAlt)) return false;
+        PrivateBankAlt that = (PrivateBankAlt) o;
         return Double.compare(that.incomingInterest, incomingInterest) == 0 &&
                 Double.compare(that.outgoingInterest, outgoingInterest) == 0 &&
                 name.equals(that.name) &&

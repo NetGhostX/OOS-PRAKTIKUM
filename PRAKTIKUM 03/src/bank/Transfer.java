@@ -1,5 +1,5 @@
 package bank;
-
+import bank.exceptions.*;
 /**
  * The Transfer class represents a financial transaction that involves transferring money
  * from one party (sender) to another (recipient).
@@ -18,12 +18,16 @@ public class Transfer extends Transaction implements CalculateBill {
      * @param recipient   the recipient of the transfer
      * @throws IllegalArgumentException if sender or recipient is null or empty
      */
-    public Transfer(String date, String description, double amount, String sender, String recipient) {
+    public Transfer(String date, String description, double amount, String sender, String recipient) throws InvalidTransactionException {
         super(date, description, amount);
+
+        if (amount <= 0) {
+            throw new InvalidTransactionException("Amount must be positive.");
+        }
+
         setSender(sender);
         setRecipient(recipient);
     }
-
     /**
      * Constructs a new Transfer by copying another Transfer.
      *

@@ -1,5 +1,5 @@
 package bank;
-
+import bank.exceptions.*;
 /**
  * The Payment class represents a financial transaction that includes interest calculations
  * for both incoming (deposit) and outgoing (withdrawal) payments.
@@ -18,12 +18,19 @@ public class Payment extends Transaction implements CalculateBill {
      * @param outgoingInterest the interest rate for outgoing payments (withdrawals)
      * @throws IllegalArgumentException if the interest rates are not between 0 and 1
      */
-    public Payment(String date, String description, double amount, double incomingInterest, double outgoingInterest) {
+    public Payment(String date, String description, double amount, double incomingInterest, double outgoingInterest) throws InvalidTransactionException {
         super(date, description, amount);
-        setIncomingInterest(incomingInterest);
-        setOutgoingInterest(outgoingInterest);
-    }
 
+        if (incomingInterest < 0 || incomingInterest > 1) {
+            throw new InvalidTransactionException("Incoming interest rate must be between 0 and 1.");
+        }
+        if (outgoingInterest < 0 || outgoingInterest > 1) {
+            throw new InvalidTransactionException("Outgoing interest rate must be between 0 and 1.");
+        }
+
+        this.incomingInterest = incomingInterest;
+        this.outgoingInterest = outgoingInterest;
+    }
     /**
      * Constructs a new Payment by copying another Payment.
      *

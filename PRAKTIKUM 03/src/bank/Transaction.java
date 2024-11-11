@@ -1,6 +1,8 @@
 package bank;
 
-public abstract class Transaction {
+import bank.exceptions.InvalidTransactionException;
+
+public abstract class Transaction implements CalculateBill {
     private String date;
     private String description;
     private double amount;
@@ -35,8 +37,10 @@ public abstract class Transaction {
         return amount;
     }
 
-    public void setAmount(double amount) {
-        this.amount = amount;
+    public void setAmount(double amount){
+        if (amount <= 0){
+            throw new InvalidTransactionException("Amount must be positive");
+        }
     }
 
     // toString Methode
