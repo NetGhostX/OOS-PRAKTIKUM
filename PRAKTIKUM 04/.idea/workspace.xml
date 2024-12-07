@@ -4,66 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56ca8212-9f8b-451f-9b54-3aa49bd2b82f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="5e707bc0-5304-416c-82d6-739b66d1536a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../sa/PRAKTIKUM 04.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 03/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PRAKTIKUM 03/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PRAKTIKUM 03/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 03/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PRAKTIKUM 03/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="Exception" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 3
+  &quot;associatedIndex&quot;: 1
 }</component>
-  <component name="ProjectId" id="2ofF2aJBw8HqZJXXLvfeC0qmDba" />
+  <component name="ProjectId" id="2pLPqnvyX8WWzqb38sy0zO57eyM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.PRAKTIKUM 03.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/yawok/Documents/Uni/Semester 3/OOS/Praktikum/OOS-PRAKTIKUM/PRAKTIKUM 04",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="PRAKTIKUM 03" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="PRAKTIKUM 03" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -75,15 +51,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="56ca8212-9f8b-451f-9b54-3aa49bd2b82f" name="Changes" comment="" />
-      <created>1731252520316</created>
+      <changelist id="5e707bc0-5304-416c-82d6-739b66d1536a" name="Changes" comment="" />
+      <created>1732542575528</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1731252520316</updated>
-      <workItem from="1731252521481" duration="19049000" />
-      <workItem from="1731355518667" duration="4988000" />
-      <workItem from="1731360973842" duration="1447000" />
-      <workItem from="1732538305327" duration="646000" />
+      <updated>1732542575528</updated>
+      <workItem from="1732542576760" duration="1409000" />
+      <workItem from="1732546449143" duration="23000" />
     </task>
     <servers />
   </component>
