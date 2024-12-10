@@ -5,9 +5,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56ca8212-9f8b-451f-9b54-3aa49bd2b82f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/.classes.mmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/Bank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/Bank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/CalculateBill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/CalculateBill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/IncomingTransfer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/IncomingTransfer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/OutgoingTransfer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/OutgoingTransfer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/Payment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/Payment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/PrivateBank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/PrivateBank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/PrivateBankAlt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/PrivateBankAlt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/Transaction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/Transaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/Transfer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/Transfer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/exceptions/AccountAlreadyExistsException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/exceptions/AccountAlreadyExistsException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/exceptions/AccountDoesNotExistException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/exceptions/AccountDoesNotExistException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/exceptions/InvalidInterestArgument.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/exceptions/InvalidInterestArgument.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/exceptions/InvalidTransactionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/exceptions/InvalidTransactionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/exceptions/TransactionAlreadyExistException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/exceptions/TransactionAlreadyExistException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/exceptions/TransactionAttributeException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/exceptions/TransactionAttributeException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/exceptions/TransactionDoesNotExistException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM 04/src/bank/exceptions/TransactionDoesNotExistException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sa/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sa/OOS_Praktikum_P4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sa/PRAKTIKUM 04.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sa/PersistenceSample.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sa/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sa/pom_vscode.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,27 +81,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.PRAKTIKUM 03.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/yawok/Documents/Uni/Semester 3/OOS/Praktikum/OOS-PRAKTIKUM/PRAKTIKUM 04",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PRAKTIKUM 03.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yawok/Documents/Uni/Semester 3/OOS/Praktikum/OOS-PRAKTIKUM/PRAKTIKUM 04&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="PRAKTIKUM 03" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -84,6 +131,9 @@
       <workItem from="1731355518667" duration="4988000" />
       <workItem from="1731360973842" duration="1447000" />
       <workItem from="1732538305327" duration="646000" />
+      <workItem from="1733561672659" duration="1232000" />
+      <workItem from="1733564796124" duration="12000" />
+      <workItem from="1733566007193" duration="3000" />
     </task>
     <servers />
   </component>

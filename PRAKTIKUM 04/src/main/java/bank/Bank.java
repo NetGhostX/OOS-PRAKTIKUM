@@ -1,8 +1,13 @@
 package bank;
 
-import bank.exceptions.*;
-
+import java.io.IOException;
 import java.util.List;
+
+import bank.exceptions.AccountAlreadyExistsException;
+import bank.exceptions.AccountDoesNotExistException;
+import bank.exceptions.TransactionAlreadyExistException;
+import bank.exceptions.TransactionAttributeException;
+import bank.exceptions.TransactionDoesNotExistException;
 
 /**
  * Interface for a generic bank. Provides multiple methods to handle the interaction between
@@ -16,7 +21,7 @@ public interface Bank {
      * @param account the account to be added
      * @throws AccountAlreadyExistsException if the account already exists
      */
-    void createAccount(String account) throws AccountAlreadyExistsException;
+    void createAccount(String account) throws AccountAlreadyExistsException, IOException;
 
     /**
      * Adds an account (with specified transactions) to the bank.
@@ -29,7 +34,7 @@ public interface Bank {
      * @throws TransactionAttributeException    if the validation check for certain attributes fail
      */
     void createAccount(String account, List<Transaction> transactions)
-            throws AccountAlreadyExistsException, TransactionAlreadyExistException, TransactionAttributeException;
+            throws AccountAlreadyExistsException, TransactionAlreadyExistException, TransactionAttributeException , IOException;
 
     /**
      * Adds a transaction to an already existing account.
@@ -41,7 +46,7 @@ public interface Bank {
      * @throws TransactionAttributeException    if the validation check for certain attributes fail
      */
     void addTransaction(String account, Transaction transaction)
-            throws TransactionAlreadyExistException, AccountDoesNotExistException, TransactionAttributeException;
+            throws TransactionAlreadyExistException, AccountDoesNotExistException, TransactionAttributeException, IOException;
 
     /**
      * Removes a transaction from an account. If the transaction does not exist, an exception is
@@ -53,7 +58,7 @@ public interface Bank {
      * @throws TransactionDoesNotExistException if the transaction cannot be found
      */
     void removeTransaction(String account, Transaction transaction)
-            throws AccountDoesNotExistException, TransactionDoesNotExistException;
+            throws AccountDoesNotExistException, TransactionDoesNotExistException,IOException;
 
     /**
      * Checks whether the specified transaction for a given account exists.

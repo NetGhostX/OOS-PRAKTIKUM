@@ -1,0 +1,16 @@
+[
+  {
+    "incomingInterest": 0.1,
+    "outgoingInterest": 0.1,
+    "date": "01.01.2023",
+    "description": "Test Payment",
+    "amount": 100.0
+  },
+  {
+    "sender": "Sender",
+    "recipient": "Recipient",
+    "date": "01.01.2023",
+    "description": "Test Transfer",
+    "amount": 100.0
+  }
+]
